@@ -1,0 +1,151 @@
+.media-plan-box {
+  background-color: #fff;
+  width: 610px;
+  margin: 30px auto;
+  border-radius: 20px;
+}
+
+.media-plan-box > .inner-wrapper {
+  padding: 50px;
+}
+.grid-container {
+  display: grid;
+  grid-column-gap: 20px;
+  padding: 10px;
+}
+.grid-full {
+  grid-template-columns: auto;
+}
+
+.grid-half {
+  grid-template-columns: auto auto;
+}
+
+.grid-one-forth {
+  grid-template-columns: 20% 25% 25% 25%;
+}
+.total {
+  text-align: right;
+  color: #6f828d;
+  font-size: 15px;
+  font-weight: 700;
+}
+label {
+  display: block;
+  font-weight: 500;
+  color: #6f828d;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+}
+
+label.label-sm {
+  font-size: 14px;
+}
+
+.sub-heading .grid-item {
+  font-weight: 500;
+  color: #6f828d;
+  font-size: 14px;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+.react-datepicker__header {
+  background-color: #d5e4ed;
+  border-bottom: 1px solid #d5e4ed;
+}
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  background-color: #62727c;
+}
+.input-control,
+.react-datepicker__input-container input {
+  border: none;
+  background: #d5e4ed;
+  font-weight: 500;
+  color: #6f828d;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  border-radius: 15px;
+  outline: none;
+}
+
+.input-control:focus {
+  outline: none;
+  background: #bccad3;
+}
+
+.btn-wrapper {
+  text-align: right;
+  margin-top: 20px;
+}
+button {
+  margin-left: 10px;
+  background: #d5e3ed;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #6f818d;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* radio button style */
+.sq-radio {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.sq-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 12px;
+  display: block;
+  left: 35%;
+  text-align: center;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  border-radius: 12px;
+  background-color: #d5e4ed;
+}
+.sq-radio:hover input ~ .checkmark {
+  background-color: #62727c;
+}
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.sq-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+.sq-radio .checkmark:after {
+  top: 7px;
+  left: 7px;
+  width: 21px;
+  height: 21px;
+  border-radius: 7px;
+  background-color: #62727c;
+}
